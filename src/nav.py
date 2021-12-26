@@ -6,9 +6,7 @@ import credits
 
 def main():
     
-
-    st.sidebar.title('MaMamaik Menüsü')
-
+    st.sidebar.title('MaMatik Menü')
 
     operations = ['Mama Bağışı', 'Can Dostumu Bul', 'İletişim']
     st.sidebar.subheader('İşlemler')
