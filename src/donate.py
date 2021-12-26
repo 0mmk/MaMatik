@@ -8,7 +8,7 @@ mama_price = 2
 
 def main():
     st.title(emoji.emojize('MaMa Bağışı :hearts:'))
-    st.write('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+    st.write('Mamamatikler hayvanlarını beslemek için alt kısmında mama ve su kabı bulunan, temelde para ya da atık şişe, teneke kutu, plastik şişe atıldığında mama ve/veya su veren otomat makineleridir. MaMatikler sayesinde bağışlarınızla sokak hayvanlarına yardımcı olabilirsiniz. ')
     num_of_mama = st.number_input('Kaç sokak canlısına mama bağışlamak istersiniz ?', min_value=1, step=1, )
 
     st.write('Toplam MaMa maliyeti {} TL'.format(num_of_mama * mama_price))

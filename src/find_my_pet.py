@@ -10,8 +10,8 @@ from PIL import Image, ImageOps
 
 def main():
     
-    st.title(emoji.emojize('The Ultimate MaMatik :dog:'))
-    st.write('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+    st.title(emoji.emojize('Can Dostumu Bul'))
+    st.write("MaMatikler bulundurduğu kamera sistemi sayesinde, mama yemek için gelen canlıların fotoğraflarını çeker ve kaydeder. Eğer sisteme kayıtı kayıp bir canlı eşleşmesi olursa MaMatik'in konumunu hayvan sahibine gönderilir.")
 
     # user uploads their pets photos, could be one or more photos
     uploaded_image = st.file_uploader('Sahibi olduğunuz hayvanın bir veye birden çok fotoğrafını yükleyiniz. ',accept_multiple_files=1)
@@ -57,7 +57,7 @@ def main():
 
 
     # add model and take inpups from current_image
-    if st.button('predict'):
+    if st.button('Predict'):
         current_photo = './data/capture' + str(st.session_state.capture - 1) + '.jpg'   
         predict(current_photo)
         display_map(41.089566, 29.095647)

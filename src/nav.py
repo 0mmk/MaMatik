@@ -2,10 +2,12 @@ import streamlit as st
 import donate
 import find_my_pet
 import credits
+import emoji
 
 
 def main():
-    
+
+    st.title(emoji.emojize('The Ultimate MaMatik :dog:'))
     st.sidebar.title('MaMatik Menü')
 
     operations = ['Mama Bağışı', 'Can Dostumu Bul', 'İletişim']
